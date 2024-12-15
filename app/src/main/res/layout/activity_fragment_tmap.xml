@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:elevation="20dp"
+            android:text="여기서 검색"
+            android:id="@+id/tvSearch"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linMapView">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="right|bottom">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnZoomIn"
+                android:background="@drawable/ic_baseline_zoom_in_24"
+                android:textColor="@color/black"
+                android:elevation="20dp"
+                android:layout_margin="10dp"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnZoomOut"
+                android:background="@drawable/ic_baseline_zoom_out_24"
+                android:textColor="@color/black"
+                android:elevation="20dp"
+                android:layout_margin="10dp"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnMyLocation"
+                android:background="@drawable/ic_baseline_gps_fixed_24"
+                android:textColor="@color/black"
+                android:elevation="20dp"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/btnFind"
+                android:background="@drawable/ic_baseline_directions_24"
+                android:textColor="#fff"
+                android:elevation="20dp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
